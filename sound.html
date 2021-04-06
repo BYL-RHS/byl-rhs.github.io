@@ -16,15 +16,21 @@
             var h = window.innerHeight;
             //declare variable for sound;
             var boing;
+            //declare variable for image
+            var fireball;
             //build a function to preload
+            
             function preload(){
                 soundFormats("mp3");
                 boing = loadSound("boing.mp3");
             }
             function setup(){
                 createCanvas(w,h);
+                fireball =loadImage("fireball.png");
             }
             function draw(){
+                clean();
+                image(fireball,mouseX,mouseY,100,60);
                 if(keyIsDown(32)){
                     boing.play();
                 }
