@@ -133,6 +133,9 @@ function mousePressed(){
 
 function reset(){
     bestScore += score;
+    if(bestScore <0){
+      bestScore =0;
+    }
 	  score=0;
   	speed=2;
     speed1=2;
