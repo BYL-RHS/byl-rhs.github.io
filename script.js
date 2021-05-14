@@ -87,7 +87,7 @@ function game(){
     score+=1;
 		p.play();
   }
-  if(yy>h-50&&xx>z-30 && xx<z+30){
+  if((yy>(h-50)-30)&&xx>z-45 && xx<z+45){
     yy=-20;
     speed1+=.35;
     score-=2;
